@@ -1,43 +1,125 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
   <head>
     <title>Recipe Book</title>
+    <meta charset="utf-8">
 
-
+<!-- bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 
-    <meta charset="utf-8">
-    <title></title>
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark ">
-      <!-- Links -->
-      <a href="#" class="navbar-brand" font-weight= bold>My Recipe</a>
-<button class="navbar-toggler" data-toggle="collapse" data-target="#navMenu">
-<span class="navbar-toggler-icon"></span>
-</button>
+    <style >
 
-<div class="collapse navbar-collapse" id="navMenu">
+    form {
+      Padding:30px
+      Color: blue;
+    }
+
+    .child {
+
+      align:center;
+      width:50%;
+      height: 50%;
+      margin:0 auto;
+      border: 0.5% solid black;
+      padding: 2%;
+
+      }
+
+      .test {
+        display: flex;
+        justify-content: center;
+      }
+
+      .ttext {
+        justify-content: center;
+        
+      }
 
 
-      <ul class="navbar-nav  mr-auto justify-content-center">
-        <li class="nav-item">
-          <a class="nav-link" href="Home.html">Home </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="Plantation Cake.html">Plantation Cake </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="Marble Cake.html">Marble Cake </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="Molasses Feather Cake.html">Molasses Feather Cake </a>
-        </li>
-      </ul>
-</div>
-    </nav>
+    </style>
+
+
+<!-- Links navigation bar -->
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark ">
+          <a href="#" class="navbar-brand" font-weight= bold>My Recipe</a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navMenu">
+            <span class="navbar-toggler-icon"></span></button>
+
+        <div class="collapse navbar-collapse" id="navMenu">          <!-- items to link -->
+          <ul class="navbar-nav  mr-auto justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link" href="Home.html">Home </a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Plantation Cake.html">Plantation Cake </a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Marble Cake.html">Marble Cake </a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Molasses Feather Cake.html">Molasses Feather Cake </a>
+              </li>
+              </ul>
+            </div>
+            </nav>
 
   </head>
   <body>
+
+    <div class="test">
+      <img class="flex" src="Welcome.jpg" alt="Welcome" >
+    </div>
+    <div class="ttext">
+      <h2 >Welcome To My Recipe</h2>
+      <p>My Recipe is one of the best websites for bakery.
+      here we have 3 different cakes.</p>
+      <p>
+      You can either bake them yourself or we can do it for you!</p>
+    </div>
+    <!--contact box-->
+    <div >
+        <form class="child">
+
+                <figure >
+              <blockquote class="blockquote">
+                  <p>Fill the information below For orders</p>
+                </blockquote>
+                </figure>
+
+            <h3>Contact me</h3>
+          <div class="form-group" text-align=center>
+
+              <strong>First Name: </strong>
+
+              <input type="text" name="First Name" placeholder="First Name"></div>
+            <div class="form-group">
+            <strong>Last Name: </strong><input type="text" name="Last Name" placeholder="Last Name">
+                </div>
+              <div class="form-group">
+                  <strong>Phone Number: </strong>
+                  <input type="number" name="Phone Number" placeholder="Numbers only">
+                </div>
+
+              <div class="form-group">
+                  <strong>Email Adress: </strong>
+                  <input type="email" name="Email Adress" placeholder="Email Adress">
+                </div>
+
+           <div class="form-group">
+                 <strong>Address: </strong>
+                 <input type="text" name="Comment" placeholder="Adress">
+            </div>
+
+
+            <button type="button" class="btn btn-outline-dark">Pay now</button>
+            <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">Pay later</button>
+
+        </form>
+      </div>
+
+
+    <!-- JC for the navbar -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
